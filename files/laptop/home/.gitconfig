@@ -1,0 +1,5 @@
+[core]
+	autocrlf = input
+[user]
+	email = v.posvistelik@gmail.com
+	name = Vladimir Posvistelik
