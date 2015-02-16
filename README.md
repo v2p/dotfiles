@@ -5,4 +5,4 @@ Contains configs for:
 - vim/gvim
 - i3-wm
 - git
-- gtk-2.0
+- GTK
