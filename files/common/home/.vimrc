@@ -39,3 +39,6 @@ set binary noeol " do not put a CR at the end of file
 set showmatch " show matching brackets
 set laststatus=2 " last line with status is 2 line deep
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+let g:airline_powerline_fonts = 1 " powerline-style for status bar
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10 " cool font :)
