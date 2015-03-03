@@ -32,7 +32,7 @@ floating_modifier $mod
 
 exec --no-startup-id lxterminal --title="Console"
 for_window [instance="lxterminal" title="Console"] move scratchpad
-bindsym F12 scratchpad show
+bindsym $mod+grave scratchpad show
 
 # kill focused window
 bindsym $mod+Shift+q kill
