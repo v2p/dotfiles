@@ -15,7 +15,7 @@ call vundle#rc()
 " let Vundle manage Vundle, required:
 Bundle 'gmarik/vundle' 	       
 " original repos on github:
-Bundle 'morhetz/gruvbox'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'bling/vim-airline'
 Bundle 'v2p/vim-plugin-puppet'
 
@@ -30,7 +30,7 @@ filetype plugin indent on " required!
 " color scheme setup:
 syntax enable
 set bg=dark
-colorscheme gruvbox
+colorscheme jellybeans
 
 set ai " auto indent
 set nu " line numbers
