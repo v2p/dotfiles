@@ -30,9 +30,9 @@ new_float pixel 2
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-exec --no-startup-id lxterminal --title="Console"
-for_window [instance="lxterminal" title="Console"] move scratchpad
-bindsym $mod+grave scratchpad show
+# quake-style terminal
+exec --no-startup-id guake
+for_window [class="Guake"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
