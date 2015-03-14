@@ -14,6 +14,8 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 # theme
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
