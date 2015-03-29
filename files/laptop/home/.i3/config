@@ -158,6 +158,7 @@ for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_togg
 assign [class="Firefox"] $ws2
 assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
+assign [class="Google-chrome-stable"] $ws2
 
 # config for Bar
 bar {
