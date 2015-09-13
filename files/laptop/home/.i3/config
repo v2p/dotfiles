@@ -152,9 +152,11 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id setxkbmap -layout us,ru -option grp:caps_toggle
+exec --no-startup-id xfce4-power-manager
 
 # rules for windows
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+for_window [window_role="pop-up"] floating enable # Hangouts for example
 assign [class="Firefox"] $ws2
 assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
