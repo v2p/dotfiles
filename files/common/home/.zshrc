@@ -19,6 +19,11 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # theme
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
+BULLETTRAIN_VIRTUALENV_SHOW=false
+BULLETTRAIN_NVM_SHOW=false
+BULLETTRAIN_RUBY_SHOW=false
+BULLETTRAIN_GO_SHOW=false
+
 # ... and done
 antigen apply
 

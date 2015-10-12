@@ -1,11 +1,3 @@
-set $c_bg #BFBFBF
-set $c_bg_focused #565656
-set $c_status_text #3F3F3F
-
-set $c_green #6D7F56
-set $c_blue_bg #285577
-set $c_white #DFDFDF
-
 set $mod Mod4
 
 set $ws1 "1: default"
@@ -162,18 +154,24 @@ assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
 assign [class="Google-chrome-stable"] $ws2
 
+set $c_bg #151818
+set $c_focused #00b09b
+set $c_text #abe4fa
+set $c_green_bg #064f46
+set $c_green_text #a8e4fa
+
 # config for Bar
 bar {
         colors {
             background $c_bg
-            statusline $c_status_text
-			separator $c_status_text
+            statusline $c_text
+			separator $c_text
 			
 			# border background text
-            focused_workspace   $c_blue_bg $c_blue_bg $c_white
-            active_workspace   	$c_blue_bg $c_bg $c_status_text
-            inactive_workspace 	$c_bg $c_bg $c_status_text
-            urgent_workspace  	$c_bg_focused $c_bg_focused $c_white
+            focused_workspace   $c_focused $c_green_bg $c_green_text
+            active_workspace   	$c_green_bg $c_green_bg $c_green_text
+            inactive_workspace 	$c_bg $c_bg $c_text
+            urgent_workspace  	$c_focused $c_focused $c_bg
         }
 
 		position top
