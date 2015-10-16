@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 set nocompatible " be iMproved
 filetype off " required!
 
@@ -34,11 +37,13 @@ colorscheme jellybeans
 
 set ai " auto indent
 set nu " line numbers
-set ts=4 " tabs = 4 spaces
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ " select which invisible characters to show
+set list " make invisible characters visible
 set binary noeol " do not put a CR at the end of file
 set showmatch " show matching brackets
 set laststatus=2 " last line with status is 2 line deep
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+set ts=4 sts=4 sw=4 expandtab " spaces/tabs config
 
 let g:airline_powerline_fonts = 1 " powerline-style for status bar
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10 " cool font :)

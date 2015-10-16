@@ -1,3 +1,27 @@
+set $c_bg #151818
+set $c_focused #00b09b
+set $c_text #abe4fa
+set $c_green_bg #064f46
+set $c_green_text #a8e4fa
+
+# config for Bar
+bar {
+        colors {
+            background $c_bg
+            statusline $c_text
+            separator $c_text
+
+            # border background text
+            focused_workspace   $c_focused $c_green_bg $c_green_text
+            active_workspace    $c_green_bg $c_green_bg $c_green_text
+            inactive_workspace  $c_bg $c_bg $c_text
+            urgent_workspace    $c_focused $c_focused $c_bg
+        }
+
+        position top
+        status_command i3status --config ~/.i3/i3status.conf
+}
+
 set $mod Mod4
 
 set $ws1 "1: default"
@@ -5,19 +29,24 @@ set $ws2 "2: web"
 set $ws3 "3: IDE"
 set $ws4 "4: IM"
 
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# set $font_default "-misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1"
+
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Ubuntu 10
+
+# custom j4-dmenu tool:
+bindsym $mod+F2 exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i -nb '$c_bg' -nf '$c_text' -sb '$c_focused' -sf '$c_bg'"
 
 hide_edge_borders both
 new_window none
 new_float pixel 2
 
 # class                 border  backgr. text    indicator
-# client.focused          
-# client.focused_inactive 
-# client.unfocused        
-# client.urgent           
-# client.background      	
+# client.focused
+# client.focused_inactive
+# client.unfocused
+# client.urgent
+# client.background
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -28,9 +57,6 @@ for_window [class="Guake"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# custom j4-dmenu tool:
-bindsym $mod+F2 exec --no-startup-id j4-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -154,26 +180,3 @@ assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
 assign [class="Google-chrome-stable"] $ws2
 
-set $c_bg #151818
-set $c_focused #00b09b
-set $c_text #abe4fa
-set $c_green_bg #064f46
-set $c_green_text #a8e4fa
-
-# config for Bar
-bar {
-        colors {
-            background $c_bg
-            statusline $c_text
-			separator $c_text
-			
-			# border background text
-            focused_workspace   $c_focused $c_green_bg $c_green_text
-            active_workspace   	$c_green_bg $c_green_bg $c_green_text
-            inactive_workspace 	$c_bg $c_bg $c_text
-            urgent_workspace  	$c_focused $c_focused $c_bg
-        }
-
-		position top
-		status_command i3status --config ~/.i3/i3status.conf
-}
