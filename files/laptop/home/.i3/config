@@ -29,13 +29,10 @@ set $ws2 "2: web"
 set $ws3 "3: IDE"
 set $ws4 "4: IM"
 
-# set $font_default "-misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1"
-
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:Ubuntu 10
+font pango:Source Code Pro for Powerline Semibold 9
 
 # custom j4-dmenu tool:
-bindsym $mod+F2 exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i -nb '$c_bg' -nf '$c_text' -sb '$c_focused' -sf '$c_bg'"
+bindsym $mod+F2 exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -i -nb '$c_bg' -nf '$c_green_text' -sb '$c_green_bg' -sf '$c_green_text' -fn 'Source Code Pro for Powerline:size=9:style=Semibold'"
 
 hide_edge_borders both
 new_window none
@@ -171,12 +168,13 @@ exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id setxkbmap -layout us,ru -option grp:caps_toggle
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id compton -b
 
 # rules for windows
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
-for_window [window_role="pop-up"] floating enable # Hangouts for example
+for_window [window_role="pop-up"] floating enable # Hangouts
 assign [class="Firefox"] $ws2
 assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
-assign [class="Google-chrome-stable"] $ws2
+assign [class="google-chrome"] $ws2
 

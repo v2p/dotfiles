@@ -1,9 +1,9 @@
 # dotfiles
 
 Contains configs for:
-- bash
-- zsh
+- bash/zsh
 - vim/gvim
 - i3-wm
 - git
 - GTK
+- compton
