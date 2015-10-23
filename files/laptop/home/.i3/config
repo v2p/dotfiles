@@ -1,8 +1,22 @@
+set $mod Mod4
+
+set $ws1 "1: default"
+set $ws2 "2: web"
+set $ws3 "3: IDE"
+set $ws4 "4: IM"
+
 set $c_bg #151818
 set $c_focused #00b09b
 set $c_text #abe4fa
 set $c_green_bg #064f46
 set $c_green_text #a8e4fa
+
+# class / property          border, background, text, indicator
+client.focused              $c_focused $c_green_bg $c_green_text $c_bg
+client.focused_inactive     $c_focused $c_bg $c_text $c_bg
+client.unfocused            $c_bg $c_bg $c_text $c_bg
+client.urgent               $c_focused $c_focused $c_bg $c_bg
+client.background           $c_bg $c_bg $c_text $c_bg
 
 # config for Bar
 bar {
@@ -22,13 +36,6 @@ bar {
         status_command i3status --config ~/.i3/i3status.conf
 }
 
-set $mod Mod4
-
-set $ws1 "1: default"
-set $ws2 "2: web"
-set $ws3 "3: IDE"
-set $ws4 "4: IM"
-
 font pango:Source Code Pro for Powerline Semibold 9
 
 # custom j4-dmenu tool:
@@ -38,12 +45,8 @@ hide_edge_borders both
 new_window none
 new_float pixel 2
 
-# class                 border  backgr. text    indicator
-# client.focused
-# client.focused_inactive
-# client.unfocused
-# client.urgent
-# client.background
+focus_follows_mouse yes
+workspace_auto_back_and_forth yes
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -105,8 +108,6 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+d focus child
 
-workspace_auto_back_and_forth yes
-
 bindsym $mod+Control+Left workspace prev
 bindsym $mod+Control+Right workspace next
 
@@ -135,9 +136,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r reload
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
