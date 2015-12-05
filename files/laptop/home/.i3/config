@@ -144,6 +144,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # custom lockscreen
 bindsym $mod+Control+l exec sh ~/.i3/i3lock-helper.sh
 
+# print screen
+bindsym Print exec scrot
+bindsym --release $mod+Print exec scrot -s
+
 # modes
 mode "resize" {
         bindsym j resize shrink width 10 px or 10 ppt
