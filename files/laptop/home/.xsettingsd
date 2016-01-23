@@ -1,0 +1,15 @@
+Net/ThemeName "Lubuntu-default"
+Net/IconThemeName "lubuntu"
+Gtk/FontName "Ubuntu 11"
+Gtk/ToolbarStyle 3
+Gtk/ButtonImages 0
+Gtk/MenuImages 1
+Gtk/CursorThemeSize 18
+Xft/Antialias 1
+Xft/Hinting 1
+Xft/HintStyle "hintfull"
+Xft/RGBA "rgb"
+Gtk/CursorThemeName "DMZ-White"
+Gtk/ToolbarIconSize 3
+Net/EnableEventSounds 0
+Net/EnableInputFeedbackSounds 0
