@@ -172,7 +172,8 @@ bindsym $mod+r mode "resize"
 # autorun
 exec --no-startup-id guake
 exec --no-startup-id nm-applet
-# exec --no-startup-id volumeicon
+# https://github.com/Maato/volumeicon
+exec --no-startup-id volumeicon
 exec --no-startup-id setxkbmap -layout us,ru -option grp:caps_toggle
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xsettingsd
