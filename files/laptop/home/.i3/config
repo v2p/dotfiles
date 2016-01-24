@@ -169,16 +169,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# autorun
-exec --no-startup-id guake
-exec --no-startup-id nm-applet
-# https://github.com/Maato/volumeicon
-exec --no-startup-id volumeicon
-exec --no-startup-id setxkbmap -layout us,ru -option grp:caps_toggle
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xsettingsd
-exec --no-startup-id compton -b
-
 # rules for windows
 for_window [instance="guake"] floating enable
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
