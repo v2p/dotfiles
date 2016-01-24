@@ -179,3 +179,5 @@ assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
 assign [class="google-chrome"] $ws2
 
+exec --no-startup-id sh ~/.fehbg
+exec i3-msg "reload"
