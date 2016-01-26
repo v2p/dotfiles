@@ -3,11 +3,11 @@ Net/IconThemeName "Lubuntu-dark-panel"
 Gtk/FontName "Ubuntu 11"
 Gtk/ToolbarStyle 3
 Gtk/ButtonImages 0
-Gtk/MenuImages 1
+Gtk/MenuImages 0
 Gtk/CursorThemeSize 18
 Xft/Antialias 1
 Xft/Hinting 1
-Xft/HintStyle "slight"
+Xft/HintStyle "medium"
 Xft/RGBA "rgb"
 Gtk/CursorThemeName "DMZ-White"
 Gtk/ToolbarIconSize 3
