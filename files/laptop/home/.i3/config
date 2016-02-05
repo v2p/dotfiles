@@ -1,9 +1,9 @@
 set $mod Mod4
 
-set $ws1 "1: default"
-set $ws2 "2: web"
-set $ws3 "3: IDE"
-set $ws4 "4: IM"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
 
 set $c_bg #151818
 set $c_focused #00b09b
@@ -20,6 +20,8 @@ client.background           $c_bg $c_bg $c_text $c_bg
 
 # config for Bar
 bar {
+        font pango:FontAwesome 9
+
         colors {
             background $c_bg
             statusline $c_text
