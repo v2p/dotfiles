@@ -16,7 +16,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle, required:
-Bundle 'gmarik/vundle' 	       
+Bundle 'gmarik/vundle'
 " original repos on github:
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'bling/vim-airline'

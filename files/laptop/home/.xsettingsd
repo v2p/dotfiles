@@ -6,7 +6,7 @@ Gtk/ButtonImages 0
 Gtk/MenuImages 0
 Gtk/CursorThemeSize 18
 Xft/Antialias 1
-Xft/Hinting 1
+Xft/Hinting 0
 Xft/HintStyle "medium"
 Xft/RGBA "rgb"
 Gtk/CursorThemeName "DMZ-White"
