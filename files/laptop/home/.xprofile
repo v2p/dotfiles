@@ -1,8 +1,8 @@
 setxkbmap -layout us,ru -option grp:caps_toggle &
 xsettingsd &
-compton -b &
 nm-applet &
 # https://github.com/Maato/volumeicon
 volumeicon &
 xfce4-power-manager &
+compton -b &
 guake &

@@ -144,14 +144,11 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # custom lockscreen
-bindsym $mod+Control+l exec sh ~/.i3/i3lock-helper.sh
+bindsym $mod+Control+l exec sh ~/custom-scripts/i3lock-helper.sh
 
 # print screen
 bindsym --release Print exec scrot
 bindsym --release $mod+Print exec scrot -s
-
-# attach second screen:
-bindsym $mod+Shift+m exec xrandr --output DFP1 --auto --right-of LVDS
 
 # modes
 mode "resize" {
@@ -181,5 +178,5 @@ assign [class="jetbrains-phpstorm"] $ws3
 assign [class="Skype"] $ws4
 assign [class="google-chrome"] $ws2
 
-exec --no-startup-id sh ~/.fehbg
+exec --no-startup-id sh ~/custom-scripts/set-wallpaper.sh
 exec i3-msg "reload"
