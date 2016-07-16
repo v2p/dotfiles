@@ -4,7 +4,7 @@ if [ -d "$HOME/.composer/vendor/bin" ] ; then
 fi	
 
 # npm custom prefix
-PATH="$HOME/npm-global/bin:$PATH"
+PATH="$HOME/.npm-global/bin:$PATH"
 
 source ~/Soft/antigen/antigen.zsh
 
@@ -29,3 +29,4 @@ BULLETTRAIN_GO_SHOW=false
 # ... and done
 antigen apply
 
+set -o vi

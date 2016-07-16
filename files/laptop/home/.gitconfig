@@ -3,3 +3,5 @@
 [user]
 	email = v.posvistelik@gmail.com
 	name = Vladimir Posvistelik
+[credential]
+	helper = cache --timeout=3600
