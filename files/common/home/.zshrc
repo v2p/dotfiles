@@ -6,6 +6,9 @@ fi
 # npm custom prefix
 PATH="$HOME/.npm-global/bin:$PATH"
 
+# path to custom tools:
+PATH="$HOME/bin:$PATH"
+
 source ~/Soft/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -15,6 +18,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle ssh-agent
 antigen bundle git-flow
+antigen bundle composer
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
