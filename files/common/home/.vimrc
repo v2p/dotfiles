@@ -21,6 +21,7 @@ Bundle 'gmarik/vundle'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'bling/vim-airline'
 Bundle 'v2p/vim-plugin-puppet'
+Bundle 'rosstimson/bats.vim'
 
 
 if vundleExists == 1
