@@ -34,3 +34,6 @@ BULLETTRAIN_GO_SHOW=false
 antigen apply
 
 set -o vi
+
+alias dc-u="docker-compose up -d"
+alias dc-d="docker-compose down"
