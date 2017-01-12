@@ -11,6 +11,11 @@ if [ -d "$HOME/.yarn/bin" ]; then
     PATH="$HOME/.yarn/bin:$PATH"
 fi
 
+# path to nvm:
+if [ -d "$HOME/.nvm" ]; then
+    PATH="$HOME/.nvm:$PATH"
+fi
+
 # path to custom tools:
 PATH="$HOME/bin:$PATH"
 
