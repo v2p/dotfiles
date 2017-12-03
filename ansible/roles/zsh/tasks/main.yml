@@ -1,0 +1,6 @@
+---
+  - name: Install Zsh
+    package: name={{ item }} state=latest
+    with_items:
+      - zsh
+    become: true
