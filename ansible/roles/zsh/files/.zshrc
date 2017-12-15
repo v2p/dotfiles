@@ -19,6 +19,10 @@ fi
 # path to custom tools:
 PATH="$HOME/bin:$PATH"
 
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte.sh
+fi
+
 source ~/Soft/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.

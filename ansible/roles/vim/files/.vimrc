@@ -47,4 +47,4 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLM
 set ts=4 sts=4 sw=4 expandtab " spaces/tabs config
 
 let g:airline_powerline_fonts = 1 " powerline-style for status bar
-set guifont=Anonymous\ Pro\ for\ Powerline\ Bold\ 12 " cool font :)
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Semibold\ 11 " cool font :)
